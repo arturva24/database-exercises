@@ -1,7 +1,7 @@
 USE codeup_test_db;
 
 SELECT 'NAME OF PINK FLOYD ALBUMS' AS '';
-SELECT *
+SELECT name
 FROM albums
 WHERE artist = 'Pink Floyd';
 
