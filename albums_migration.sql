@@ -8,6 +8,6 @@ artist VARCHAR (200) NOT NULL,
 name VARCHAR (200) NOT NULL,
 release_date INT(4) NOT NULL,
 sales DECIMAL(10,2) NOT NULL,
-genre VARCHAR (250) NOT NULL,
+genre VARCHAR (200) NOT NULL,
 PRIMARY KEY (id)
 );
