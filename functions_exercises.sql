@@ -38,12 +38,12 @@ FROM employees
 WHERE hire_date LIKE '%-12-25';
 
 SELECT 'Employees with a ''q'' in their last name';
-SELECT COUNT(last_name)AS 'TIMES', first_name, last_name
+SELECT COUNT(*)AS 'TIMES', first_name, last_name
 FROM employees
 WHERE last_name LIKE '%q%'
 AND last_name NOT LIKE '%qu%'
 GROUP BY first_name, last_name
-ORDER BY last_name;
+ORDER BY COUNT(*)DESC;
 
 SELECT *
 FROM employees
